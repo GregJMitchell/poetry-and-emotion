@@ -1,0 +1,129 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://iam.cloud.ibm.com/identity/token
+    body:
+      encoding: UTF-8
+      string: grant_type=urn%3Aibm%3Aparams%3Aoauth%3Agrant-type%3Aapikey&apikey=API_Key&response_type=cloud_iam
+    headers:
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept:
+      - application/json
+      Connection:
+      - close
+      Host:
+      - iam.cloud.ibm.com
+      User-Agent:
+      - http.rb/4.1.1
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Transaction-Id:
+      - b0d351a1fe704644bb6a0a412067a10a
+      Cache-Control:
+      - no-cache, no-store
+      Expires:
+      - '0'
+      Pragma:
+      - no-cache
+      Content-Type:
+      - application/json
+      Content-Language:
+      - en-US
+      Content-Length:
+      - '2447'
+      X-Envoy-Upstream-Service-Time:
+      - '2160'
+      Server:
+      - istio-envoy
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      Date:
+      - Fri, 08 Jan 2021 17:42:20 GMT
+      Connection:
+      - close
+      Set-Cookie:
+      - sessioncookie="7b3515c5d5dc7f53"; Path=/; HttpOnly
+    body:
+      encoding: ASCII-8BIT
+      string: '{"access_token":"eyJraWQiOiIyMDIwMTIyMTE4MzQiLCJhbGciOiJSUzI1NiJ9.eyJpYW1faWQiOiJJQk1pZC01NTAwMEFCV05QIiwiaWQiOiJJQk1pZC01NTAwMEFCV05QIiwicmVhbG1pZCI6IklCTWlkIiwianRpIjoiOTQ1ZDRlZDUtZGJkYS00OTM0LTg5ZGItYzlmNDYxYjJiYzAwIiwiaWRlbnRpZmllciI6IjU1MDAwQUJXTlAiLCJnaXZlbl9uYW1lIjoiR3JlZyIsImZhbWlseV9uYW1lIjoiTWl0Y2hlbGwiLCJuYW1lIjoiR3JlZyBNaXRjaGVsbCIsImVtYWlsIjoiRzJtaXRjaGVsbDMwMDNAZ21haWwuY29tIiwic3ViIjoiRzJtaXRjaGVsbDMwMDNAZ21haWwuY29tIiwiYWNjb3VudCI6eyJ2YWxpZCI6dHJ1ZSwiYnNzIjoiMTU1ODUyMTQ5NTYyNGQ3NzhhYmRjYjFhMmMyMjViODYiLCJmcm96ZW4iOnRydWV9LCJpYXQiOjE2MTAxMjc3MzcsImV4cCI6MTYxMDEzMTMzNywiaXNzIjoiaHR0cHM6Ly9pYW0uY2xvdWQuaWJtLmNvbS9pZGVudGl0eSIsImdyYW50X3R5cGUiOiJ1cm46aWJtOnBhcmFtczpvYXV0aDpncmFudC10eXBlOmFwaWtleSIsInNjb3BlIjoiaWJtIG9wZW5pZCIsImNsaWVudF9pZCI6ImRlZmF1bHQiLCJhY3IiOjEsImFtciI6WyJwd2QiXX0.e8qQ9wbloGxyRu0SPEYFfqbqqmnrYP6cFB28FTYvErv4FL5UD-PejLv5MWO-ohDA9k09lkvtiO393m64HDf8IMICM78M599F-hzeOfmN-pWPz6-0IMzL_ces_aqGVIc0oMwzQXXBKO1NtsTqB6tjjf2EcXSyBkKewKHAvWr90D-o_Rc4ukbxD31htGAbBypGZ9PV1WYdNfZ7suLVXjLu-kLT5KYff7PLkx_rXKk_7ir0T9aot3DOVQNQcGPyKdz0g-12cz88oE9_QxhBuM8bue0DLIt4_H8aIhvWRNc9yuTz6Fz_2GGzdXkhOZ6L3RN1WzppihVP_2vg8Vdli5zbPg","refresh_token":"OKAfkzweJUWiInpsMuDq3h7P0YsWKyzUe4h7L6saCpNvsNK8YXX7qR3BL0nbzvS20bDXFS3JA7LMXUhwiEjgJeazgebGwNIOvvxP8YaBHIOleGx6OI-teOP_hLNHUELDQs0TcXoRFHq0s5Kh-iKNwo2pkKktwlnl-egYDzWyJbjAnLFh5iSAEbUb49yX7Nl6jEgHI7U3DFGxoXYWhmSXlOXtGAIgXhnB9JhpOA7v5DvP16irST8MN4Wj2onKjQQmioABfmEjCKaoMS_k3aNIz10mRqijteIfQYeC0JLIvHk07MSbw7Z1hg_OodF_CQZsnLitIp3EqCrDCwi7wkkpWsi3FYMHhwD-a1CpExIxX2UbNCWzYy8wwLwqmvbrw3sPMUh0Mwz-7ItlWHRWFqFoVKy4B8gCXXG3o9uiaYdy5gzkCcmGmBUx6cefOlgAaGXdP0eSGRVgY3tR0k8gtNZByU7L1yDoqSFUdlnr8fi03h3wk8ISQTzQ0XtsoFm-iqX1rQyT_vtXP2V7zCm6FTZihUYehl3Jdz8NTNsGHOv9IyF0W4c9-F70wS1EPBT-otXK_hUlG-CQGleMSjXOd8A7hM3z1O37nA6ChZGMTzexriPGPG1bWLXTZgbt_qxXXpXxfnddfYuhoVecqR-ZTi8SVs2XpKr-z4d2Vg8NQbL4UvYrIwMv2Sb5GPAdmoWq6ogBWENBtoiZVfd-NpOY4Sa7FOPQB8j3jbZqoWz8ib5oSkIatC11XmQ4Lpbx_OZ7tEcNJDqgxXwJUQ0pXaZhDjSa8QDqF10FGDR1eTx25EzNC0LQ2_GXDHDc3z-ZYKc82PkylGbAxCzPMY9_4GmUxeyYSUdQjSKK7-R1N5a1Vwk3fCm9YoHJK6DiiyTXZEaTtryKsJ8vBzINj9usjVcxkRY07elMlqZ2PRheuKc1BncugOlhCSYZU7NhY5m90RbJxhmK7XuILlwk9vEH4hp3IzfFit--SsgYrKrLy0aqOfvfsWERRrLBPQ64WSo3PdnLYwk642mlraHH9_YaSFFpP4fS_0JEh6DOrb71t1dk0gsvbxZlvkEOxr5fV5EH0ob-_Gkr196N8OxJKMXxEOx_-l6eE20gpb8VIIMeCJ1GVwo_LxWRBAO-FUIfugdFNUjrRndWXmU","token_type":"Bearer","expires_in":3600,"expiration":1610131337,"refresh_token_expiration":1612719737,"scope":"ibm
+        openid"}'
+  recorded_at: Fri, 08 Jan 2021 17:42:20 GMT
+- request:
+    method: post
+    uri: https://api.us-south.tone-analyzer.watson.cloud.ibm.com/instances/4886d84a-50a2-431d-8a64-7cc0cc6d64f0/v3/tone?version=2017-09-21
+    body:
+      encoding: UTF-8
+      string: '{"text":"Not at Home to Callers Says the Naked Tree -- Bonnet due in
+        April -- Wishing you Good Day --"}'
+    headers:
+      Content-Type:
+      - application/json
+      User-Agent:
+      - watson-apis-ruby-sdk-2.0.0 x86_64-apple-darwin19.6.0 ruby-2.5.3
+      X-Ibmcloud-Sdk-Analytics:
+      - service_name=tone_analyzer;service_version=V3;operation_id=tone
+      Accept:
+      - application/json
+      Authorization:
+      - Bearer eyJraWQiOiIyMDIwMTIyMTE4MzQiLCJhbGciOiJSUzI1NiJ9.eyJpYW1faWQiOiJJQk1pZC01NTAwMEFCV05QIiwiaWQiOiJJQk1pZC01NTAwMEFCV05QIiwicmVhbG1pZCI6IklCTWlkIiwianRpIjoiOTQ1ZDRlZDUtZGJkYS00OTM0LTg5ZGItYzlmNDYxYjJiYzAwIiwiaWRlbnRpZmllciI6IjU1MDAwQUJXTlAiLCJnaXZlbl9uYW1lIjoiR3JlZyIsImZhbWlseV9uYW1lIjoiTWl0Y2hlbGwiLCJuYW1lIjoiR3JlZyBNaXRjaGVsbCIsImVtYWlsIjoiRzJtaXRjaGVsbDMwMDNAZ21haWwuY29tIiwic3ViIjoiRzJtaXRjaGVsbDMwMDNAZ21haWwuY29tIiwiYWNjb3VudCI6eyJ2YWxpZCI6dHJ1ZSwiYnNzIjoiMTU1ODUyMTQ5NTYyNGQ3NzhhYmRjYjFhMmMyMjViODYiLCJmcm96ZW4iOnRydWV9LCJpYXQiOjE2MTAxMjc3MzcsImV4cCI6MTYxMDEzMTMzNywiaXNzIjoiaHR0cHM6Ly9pYW0uY2xvdWQuaWJtLmNvbS9pZGVudGl0eSIsImdyYW50X3R5cGUiOiJ1cm46aWJtOnBhcmFtczpvYXV0aDpncmFudC10eXBlOmFwaWtleSIsInNjb3BlIjoiaWJtIG9wZW5pZCIsImNsaWVudF9pZCI6ImRlZmF1bHQiLCJhY3IiOjEsImFtciI6WyJwd2QiXX0.e8qQ9wbloGxyRu0SPEYFfqbqqmnrYP6cFB28FTYvErv4FL5UD-PejLv5MWO-ohDA9k09lkvtiO393m64HDf8IMICM78M599F-hzeOfmN-pWPz6-0IMzL_ces_aqGVIc0oMwzQXXBKO1NtsTqB6tjjf2EcXSyBkKewKHAvWr90D-o_Rc4ukbxD31htGAbBypGZ9PV1WYdNfZ7suLVXjLu-kLT5KYff7PLkx_rXKk_7ir0T9aot3DOVQNQcGPyKdz0g-12cz88oE9_QxhBuM8bue0DLIt4_H8aIhvWRNc9yuTz6Fz_2GGzdXkhOZ6L3RN1WzppihVP_2vg8Vdli5zbPg
+      Connection:
+      - close
+      Host:
+      - api.us-south.tone-analyzer.watson.cloud.ibm.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Powered-By:
+      - Servlet/3.1
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Service-Api-Version:
+      - null; 2017-09-21
+      X-Service-Build-Number:
+      - '2020-12-07T06:02:02'
+      Cache-Control:
+      - no-store
+      Pragma:
+      - no-cache
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Security-Policy:
+      - default-src 'none'
+      Content-Type:
+      - application/json
+      Content-Language:
+      - en-US
+      Content-Length:
+      - '82'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains;
+      X-Dp-Watson-Tran-Id:
+      - 9227cf52-47a4-445c-884e-10763d8b8d8f
+      X-Request-Id:
+      - 9227cf52-47a4-445c-884e-10763d8b8d8f
+      X-Global-Transaction-Id:
+      - 9227cf52-47a4-445c-884e-10763d8b8d8f
+      Server:
+      - watson-gateway
+      X-Edgeconnect-Midmile-Rtt:
+      - '49'
+      X-Edgeconnect-Origin-Mex-Latency:
+      - '277'
+      Date:
+      - Fri, 08 Jan 2021 17:42:20 GMT
+      Connection:
+      - close
+    body:
+      encoding: ASCII-8BIT
+      string: '{"document_tone":{"tones":[{"score":0.730959,"tone_id":"joy","tone_name":"Joy"}]}}'
+  recorded_at: Fri, 08 Jan 2021 17:42:20 GMT
+recorded_with: VCR 6.0.0
