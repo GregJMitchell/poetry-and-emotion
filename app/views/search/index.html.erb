@@ -1,0 +1,13 @@
+<% @results.each do |poem| %>
+  <div id="<%= poem.title.parameterize %>">
+    <p>Title: <%= poem.title %></p>
+    <p>Author: <%= poem.author %></p>
+    <p>Poem: <%= poem.lines %></p>
+    <p>Tones:</p>
+    <% poem.tones.each do |tone| %>
+      <p><%= tone[:tone_name] %></p>
+      <p><%= tone[:tone_score] %></p>
+    <% end %>
+  </div>
+  <hr>
+<% end %>
